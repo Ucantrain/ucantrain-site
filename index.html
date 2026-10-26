@@ -106,6 +106,10 @@ nav a:hover { color: var(--brand); }
   .facts li:last-child { grid-column: 1 / -1; }
 }
 
+/* Phone-friendly wrapping */
+h1, h2, h3 { text-wrap: balance; overflow-wrap: break-word; }
+p, li, summary { text-wrap: pretty; }
+
 /* First-time offer band */
 .offer-band { background: var(--go); color: var(--go-ink); padding-block: 28px; }
 .offer-band-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
@@ -113,7 +117,9 @@ nav a:hover { color: var(--brand); }
 .offer-band .tag { font-size: 13px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
 .offer-band .offer-row { display: flex; gap: 10px 22px; flex-wrap: wrap; align-items: baseline; }
 .offer-band .n { font-family: var(--display); font-size: 52px; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
-.offer-band .offer-row p { font-weight: 700; margin-right: 8px; }
+.offer-band .offer-row { gap: 12px 40px; }
+.offer-band .offer-item { display: flex; flex-direction: column; gap: 4px; }
+.offer-band .offer-row p { font-weight: 700; }
 .btn-dark { background: var(--go-ink); color: var(--go); }
 .btn-dark:hover { filter: brightness(1.2); }
 .price h3 { font-family: var(--body); font-size: 17px; font-weight: 700; text-transform: none; letter-spacing: 0; }
@@ -122,9 +128,10 @@ nav a:hover { color: var(--brand); }
 /* Focus areas */
 .focus { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
 .focus div { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 20px 18px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
-.focus h3 { color: var(--brand); font-size: 24px; overflow-wrap: anywhere; }
+.focus h3 { color: var(--brand); font-size: 24px; overflow-wrap: normal; }
 .focus p { color: var(--muted); font-size: 15px; }
 @media (max-width: 900px) { .focus { grid-template-columns: 1fr 1fr; } .focus div:last-child { grid-column: 1 / -1; } }
+@media (max-width: 560px) { .focus { grid-template-columns: 1fr; } .focus div { padding: 16px 18px; gap: 4px; } }
 
 /* Session timeline */
 .session { margin-top: 48px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; padding: 28px; }
@@ -154,6 +161,7 @@ nav a:hover { color: var(--brand); }
 .slots .who { font-size: 14px; color: var(--muted); text-align: right; }
 .off { margin-top: 16px; font-size: 15px; color: var(--muted); }
 .prices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+@media (max-width: 400px) { .prices { grid-template-columns: 1fr; } }
 .price { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px; }
 .price .n { font-family: var(--display); font-size: 52px; font-weight: 800; line-height: 1; color: var(--brand); font-variant-numeric: tabular-nums; }
 .price p { color: var(--muted); font-size: 15px; }
@@ -266,7 +274,7 @@ footer .logo { height: 32px; }
       <div>
         <span class="eyebrow">Starts Saturday, Nov 7 · Chanhassen</span>
         <h1>Train like an <span>athlete.</span></h1>
-        <p class="lede">Saturday athletic training for grades 6–12, in any sport, in season or out. Small groups, two coaches, 90 minutes.</p>
+        <p class="lede">Saturday athletic training for grades 6–&#8288;12, in any sport, in season or out. Small groups, two coaches, 90 minutes.</p>
         <div class="ctas">
           <a class="btn btn-go" href="#signup">Save a Spot</a>
           <a class="btn btn-ghost" href="#schedule">See Times &amp; Prices</a>
@@ -277,7 +285,7 @@ footer .logo { height: 32px; }
   <div class="facts">
     <div class="wrap">
       <ul>
-        <li><b>Grades 6–12</b><small>Any sport, all levels</small></li>
+        <li><b>Grades 6–&#8288;12</b><small>Any sport, all levels</small></li>
         <li><b>90 Minutes</b><small>Every Saturday</small></li>
         <li><b>20 Max</b><small>Athletes per session</small></li>
         <li><b>$20</b><small>Single session</small></li>
@@ -290,7 +298,7 @@ footer .logo { height: 32px; }
     <div class="wrap offer-band-inner">
       <div class="offer-copy">
         <span class="tag">First-Time Offer · New to U Can Train</span>
-        <div class="offer-row"><span class="n">$10</span><p>First session</p><span class="n">$75</span><p>5-session pack</p></div>
+        <div class="offer-row"><div class="offer-item"><span class="n">$10</span><p>First session</p></div><div class="offer-item"><span class="n">$75</span><p>5-session pack</p></div></div>
         <p>Sign up by Friday, Nov 6. The discount is applied automatically, so no code is needed.</p>
       </div>
       <a class="btn btn-dark" href="#signup">Claim the Offer</a>
@@ -322,9 +330,9 @@ footer .logo { height: 32px; }
           <h2>Every Saturday from Nov 7</h2>
         </div>
         <ul class="slots">
-          <li><span class="t">8:00–9:30 am</span><span class="who">Grades 6–12<br>All levels</span></li>
-          <li><span class="t">10:00–11:30 am</span><span class="who">Grades 6–12<br>All levels</span></li>
-          <li><span class="t">12:00–1:30 pm</span><span class="who">Grades 6–12<br>All levels</span></li>
+          <li><span class="t">8:00–&#8288;9:30 am</span><span class="who">Grades 6–&#8288;12<br>All levels</span></li>
+          <li><span class="t">10:00–&#8288;11:30 am</span><span class="who">Grades 6–&#8288;12<br>All levels</span></li>
+          <li><span class="t">12:00–&#8288;1:30 pm</span><span class="who">Grades 6–&#8288;12<br>All levels</span></li>
         </ul>
         <p class="off">No sessions Saturday, Nov 28 or Saturday, Dec 26.</p>
       </div>
@@ -347,7 +355,7 @@ footer .logo { height: 32px; }
       <div class="section-head">
         <span class="eyebrow">Calendar</span>
         <h2>Saturdays through December</h2>
-        <p>Six training Saturdays in 2026. Every training Saturday has all three sessions: 8:00–9:30, 10:00–11:30 and 12:00–1:30.</p>
+        <p>Six training Saturdays in 2026. Every training Saturday has all three sessions: 8:00–&#8288;9:30, 10:00–&#8288;11:30 and 12:00–&#8288;1:30.</p>
       </div>
       <div class="legend"><span><i class="k on"></i>Training Saturday</span><span><i class="k off"></i>No Session</span><span><i class="k deadline"></i>First-Time Offer Ends (Nov 6)</span></div>
       <div class="months">
@@ -394,10 +402,10 @@ footer .logo { height: 32px; }
       <div class="know">
         <div><h3>Wear</h3><p>Athletic clothes and clean tennis shoes. No cleats or shoes worn outside on the studio floor.</p></div>
         <div><h3>Bring</h3><p>A water bottle and a towel. All equipment is provided.</p></div>
-        <div><h3>Arrive</h3><p>5–10 minutes early so the session starts on time.</p></div>
+        <div><h3>Arrive</h3><p>5–&#8288;10 minutes early so the session starts on time.</p></div>
         <div><h3>Parents</h3><p>Parents are welcome to wait in the lobby. The training studio is for athletes and coaches only.</p></div>
         <div><h3>Can't Make It?</h3><p>Cancel at least 24 hours ahead to move to another slot. Cancellations within 24 hours aren't refunded.</p></div>
-        <div><h3>Injuries</h3><p>Note any injuries at signup and tell a coach at check-in. Exercises can be adjusted.</p></div>
+        <div><h3>Injuries</h3><p>Note any injuries at signup and tell a coach at check&#8209;in. Exercises can be adjusted.</p></div>
       </div>
     </div>
   </section>
