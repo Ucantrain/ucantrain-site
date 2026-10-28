@@ -39,7 +39,7 @@ Contact: ucantrainmn@gmail.com. This repo is **public**: never commit private bu
 ## Content facts the site must match
 - Sessions every Saturday from Nov 7, 2026: 8:00–9:30 am, 10:00–11:30 am, 12:00–1:30 pm.
   Every slot is grades 6–12 with easier and harder levels (no separate middle/high school slots).
-  No Sundays. No sessions Sat Nov 28 or Sat Dec 26. Max 20 athletes per session; 90 minutes.
+  No Sundays. No sessions Sat Nov 14, Sat Nov 28 or Sat Dec 26 (Nov 14 added Oct 28). Max 20 athletes per session; 90 minutes.
 - Pricing: $20 single session; $85 5-session pack ($17 each, use within 10 weeks).
 - First-time offer (athletes new to U Can Train, not new to their sport), sign up by Fri Nov 6:
   first session $10, or 5-session pack $75.
