@@ -247,7 +247,7 @@ footer .logo { height: 32px; }
         <li><a href="#faq">FAQ</a></li>
       </ul>
     </nav>
-    <a class="btn btn-go btn-sm" href="#signup">Sign Up</a>
+    <a class="btn btn-go btn-sm" href="https://app.jackrabbitclass.com/regv2.asp?id=519495" target="_blank" rel="noopener">Sign Up</a>
   </div>
 </header>
 
@@ -259,7 +259,7 @@ footer .logo { height: 32px; }
         <h1>Train like an <span>athlete.</span></h1>
         <p class="lede">Saturday athletic training for grades 6–&#8288;12, in any sport, in season or out. Small groups, two coaches, 90 minutes.</p>
         <div class="ctas">
-          <a class="btn btn-go" href="#signup">Save a Spot</a>
+          <a class="btn btn-go" href="https://app.jackrabbitclass.com/regv2.asp?id=519495" target="_blank" rel="noopener">Save a Spot</a>
           <a class="btn btn-ghost" href="#schedule">See Times &amp; Prices</a>
         </div>
       </div>
@@ -284,7 +284,7 @@ footer .logo { height: 32px; }
         <div class="offer-row"><div class="offer-item"><span class="n">$10</span><p>First session</p></div><div class="offer-item"><span class="n">$75</span><p>5-session pack</p></div></div>
         <p>Sign up by Friday, Nov 6. The discount is applied automatically, so no code is needed.</p>
       </div>
-      <a class="btn btn-dark" href="#signup">Claim the Offer</a>
+      <a class="btn btn-dark" href="https://app.jackrabbitclass.com/regv2.asp?id=519495" target="_blank" rel="noopener">Claim the Offer</a>
     </div>
   </section>
 
@@ -416,9 +416,8 @@ footer .logo { height: 32px; }
         <h2>Save your <span>spot.</span></h2>
         <p>Registration runs through the U Can Danz! Dance Company studio, and a parent or guardian completes the waiver as part of signup.</p>
         <div class="ctas">
-          <a class="btn btn-go" id="signup-link" href="#signup" aria-disabled="true">Sign Up</a>
+          <a class="btn btn-go" id="signup-link" href="https://app.jackrabbitclass.com/regv2.asp?id=519495" target="_blank" rel="noopener">Sign Up</a>
         </div>
-        <p class="pending" id="signup-pending">Online signup opens soon.</p>
       </div>
       <div class="where">
         <span class="eyebrow" style="color: var(--band-muted)">Where</span>
@@ -440,13 +439,6 @@ footer .logo { height: 32px; }
 </footer>
 
 <script>
-  // Paste the registration link here when it's ready; the Sign up buttons will use it.
-  const SIGNUP_URL = "";
-  if (SIGNUP_URL) {
-    document.querySelectorAll('a[href="#signup"]').forEach(a => { a.href = SIGNUP_URL; a.target = "_blank"; a.rel = "noopener"; });
-    const l = document.getElementById('signup-link'); l.removeAttribute('aria-disabled');
-    document.getElementById('signup-pending').hidden = true;
-  }
   document.getElementById('copy-email').addEventListener('click', async (e) => {
     const b = e.currentTarget, txt = document.getElementById('email').textContent;
     try { await navigator.clipboard.writeText(txt); b.textContent = 'Copied'; }

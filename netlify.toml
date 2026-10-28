@@ -1,3 +1,7 @@
+[build]
+  # Skip a deploy (no credits used) when a push changes only notes or source files
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)CLAUDE.md' ':(exclude)README.md' ':(exclude)src/' ':(exclude).gitignore'"
+
 [[headers]]
   for = "/img/*"
   [headers.values]

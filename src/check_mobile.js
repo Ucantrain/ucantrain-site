@@ -6,7 +6,7 @@ const {chromium}=require('playwright');
  const b=await chromium.launch();
  for (const w of [360,390,430,768]){
   const p=await b.newPage({viewport:{width:w,height:800},deviceScaleFactor:1});
-  await p.goto('process.argv[2] || 'http://127.0.0.1:8765/''); await p.waitForTimeout(800);
+  await p.goto(process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : 'http://127.0.0.1:8765/'); await p.waitForTimeout(800);
   const r=await p.evaluate(()=>{
     const out={docW:document.documentElement.scrollWidth, wide:[], broken:[]};
     document.querySelectorAll('body *').forEach(e=>{const rc=e.getBoundingClientRect(); if(rc.right>innerWidth+1 && rc.width>0) out.wide.push(e.tagName+'.'+e.className+' '+Math.round(rc.right));});

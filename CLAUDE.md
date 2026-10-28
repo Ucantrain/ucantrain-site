@@ -16,6 +16,9 @@ Contact: ucantrainmn@gmail.com. This repo is **public**: never commit private bu
   icon-192.png, icon-512.png, apple-touch-icon.png) come from `python3 src/make_icons.py`.
 - Other root files: og-image.jpg (link-preview image), robots.txt, sitemap.xml, 404.html,
   netlify.toml (cache and security headers).
+- **Netlify free plan = 300 credits/month, 15 per deploy; at 0 the site goes offline until the cycle resets
+  (cycles start the 25th).** Batch changes into one push. Pushes that only touch CLAUDE.md, README.md, src/
+  or .gitignore are skipped by the `ignore` rule in netlify.toml and cost nothing.
 - **Deploy = push to `main`.** Netlify (project `profound-beignet-ba3575`, visitor access set to
   Public) auto-deploys within about a minute. Commit as `U Can Train <ucantrainmn@gmail.com>`.
 - After a meaningful content change, bump `<lastmod>` in sitemap.xml.
@@ -56,9 +59,8 @@ Contact: ucantrainmn@gmail.com. This repo is **public**: never commit private bu
   photos in the hero.
 
 ## Open items
-- **Signup link:** in `src/template.html` set `const SIGNUP_URL = "";` to the real registration
-  URL. That rewires every `#signup` button. Until then the buttons scroll to the signup section,
-  which says "Online signup opens soon."
+- **Signup:** every Sign Up button (header, hero, offer band, signup section) links to the
+  Jackrabbit registration page https://app.jackrabbitclass.com/regv2.asp?id=519495 (added Oct 28, 2026).
 - After the Business Profile video verification: add studio and session photos to the profile.
 
 ## Before pushing, check phones
