@@ -16,7 +16,7 @@
 <meta property="og:description" content="Saturday athletic training for grades 6–12, any sport. Starts Nov 7 at U Can Danz! Dance Company in Chanhassen.">
 <meta property="og:image" content="https://ucantrain.org/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SportsActivityLocation", "name": "U Can Train", "alternateName": ["UCan Train", "UCT"], "url": "https://ucantrain.org/", "email": "ucantrainmn@gmail.com", "image": "https://ucantrain.org/og-image.jpg", "description": "Saturday athletic training for grades 6–12 in any sport: mobility, explosiveness, strength, balance and injury prevention.", "address": {"@type": "PostalAddress", "streetAddress": "7928 Kerber Blvd", "addressLocality": "Chanhassen", "addressRegion": "MN", "addressCountry": "US"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:30"}], "parentOrganization": {"@type": "Organization", "name": "U Can Danz! Dance Company"}, "employee": [{"@type": "Person", "name": "Ethan Grams", "jobTitle": "Coach"}, {"@type": "Person", "name": "Avery Holtzleicer", "jobTitle": "Coach"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "SportsActivityLocation", "name": "U Can Train", "alternateName": ["UCan Train", "UCT"], "url": "https://ucantrain.org/", "sameAs": ["https://www.instagram.com/ucantrainmn/"], "email": "ucantrainmn@gmail.com", "image": "https://ucantrain.org/og-image.jpg", "description": "Saturday athletic training for grades 6–12 in any sport: mobility, explosiveness, strength, balance and injury prevention.", "address": {"@type": "PostalAddress", "streetAddress": "7928 Kerber Blvd", "addressLocality": "Chanhassen", "addressRegion": "MN", "addressCountry": "US"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "13:30"}], "parentOrganization": {"@type": "Organization", "name": "U Can Danz! Dance Company"}, "employee": [{"@type": "Person", "name": "Ethan Grams", "jobTitle": "Coach"}, {"@type": "Person", "name": "Avery Holtzleicer", "jobTitle": "Coach"}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;700;800&family=Archivo:wght@400;500;600;700&display=swap">
@@ -249,6 +249,10 @@ details p { padding-bottom: 18px; color: var(--muted); }
 footer { padding-block: 28px; font-size: 14px; color: var(--muted); }
 footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
 footer .logo { height: 32px; }
+footer .foot-info { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; text-align: right; }
+footer .ig { display: inline-flex; align-items: center; gap: 8px; color: var(--brand); font-weight: 600; text-decoration: none; min-height: 44px; }
+footer .ig:hover b { text-decoration: underline; }
+@media (max-width: 640px) { footer .foot-info { align-items: flex-start; text-align: left; } }
 </style>
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)} body{margin:0} img{max-width:100%} [hidden]{display:none!important}</style>
 </head>
@@ -454,7 +458,10 @@ footer .logo { height: 32px; }
 <footer>
   <div class="wrap">
     <img class="logo" src="/img/logo.png" alt="U Can Train!" width="640" height="291">
-    <span>A program of U Can Danz! Dance Company · 7928 Kerber Blvd, Chanhassen · ucantrainmn@gmail.com</span>
+    <div class="foot-info">
+      <span>A program of U Can Danz! Dance Company · 7928 Kerber Blvd, Chanhassen · ucantrainmn@gmail.com</span>
+      <a class="ig" href="https://www.instagram.com/ucantrainmn/" target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg><span>Follow us on Instagram <b>@ucantrainmn</b></span></a>
+    </div>
   </div>
 </footer>
 

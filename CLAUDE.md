@@ -3,7 +3,7 @@
 This repo is the live website for **U Can Train**, Saturday athletic training for grades 6–12
 (any sport, in season or out) run by Ethan Grams and Avery Holtzleicer at the
 U Can Danz! Dance Company studio, 7928 Kerber Blvd, Chanhassen, MN 55317.
-Contact: ucantrainmn@gmail.com. This repo is **public**: never commit private business info
+Contact: ucantrainmn@gmail.com. Instagram: @ucantrainmn (linked in the footer and in JSON-LD sameAs). This repo is **public**: never commit private business info
 (insurance, finances, studio agreements, personal details). Those live in Ethan's private handoff doc.
 
 ## How the site is built and published

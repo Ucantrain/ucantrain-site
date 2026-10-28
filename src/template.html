@@ -233,6 +233,10 @@ details p { padding-bottom: 18px; color: var(--muted); }
 footer { padding-block: 28px; font-size: 14px; color: var(--muted); }
 footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: center; }
 footer .logo { height: 32px; }
+footer .foot-info { display: flex; flex-direction: column; gap: 8px; align-items: flex-end; text-align: right; }
+footer .ig { display: inline-flex; align-items: center; gap: 8px; color: var(--brand); font-weight: 600; text-decoration: none; min-height: 44px; }
+footer .ig:hover b { text-decoration: underline; }
+@media (max-width: 640px) { footer .foot-info { align-items: flex-start; text-align: left; } }
 </style>
 
 <header class="top">
@@ -434,7 +438,10 @@ footer .logo { height: 32px; }
 <footer>
   <div class="wrap">
     <img class="logo" src="{{LOGO}}" alt="U Can Train!" width="640" height="291">
-    <span>A program of U Can Danz! Dance Company · 7928 Kerber Blvd, Chanhassen · ucantrainmn@gmail.com</span>
+    <div class="foot-info">
+      <span>A program of U Can Danz! Dance Company · 7928 Kerber Blvd, Chanhassen · ucantrainmn@gmail.com</span>
+      <a class="ig" href="https://www.instagram.com/ucantrainmn/" target="_blank" rel="noopener"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg><span>Follow us on Instagram <b>@ucantrainmn</b></span></a>
+    </div>
   </div>
 </footer>
 
