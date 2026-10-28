@@ -45,7 +45,7 @@ Contact: ucantrainmn@gmail.com. Instagram: @ucantrainmn (linked in the footer an
   first session $10, or 5-session pack $75.
 - Coaches: Ethan Grams, "Chan JV Soccer Head Coach · Former Chan Soccer Player". Avery
   Holtzleicer, "NBA Dancer · Dance and Fitness Instructor".
-- Wear athletic clothes and clean tennis shoes (no cleats or outdoor shoes on the studio floor);
+- Wear athletic clothes and clean tennis shoes (no cleats; shoes worn outside are fine if clean, per Ethan Oct 28);
   bring water and a towel; arrive 5–10 minutes early; parents wait in the lobby; cancel 24+ hours
   ahead; note injuries at signup.
 - Five focus areas: Mobility, Explosiveness, Strength, Balance, Injury Prevention.
