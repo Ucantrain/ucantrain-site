@@ -23,6 +23,13 @@ Contact: ucantrainmn@gmail.com. Instagram: @ucantrainmn (linked in the footer an
   Public) auto-deploys within about a minute. Commit as `U Can Train <ucantrainmn@gmail.com>`.
 - After a meaningful content change, bump `<lastmod>` in sitemap.xml.
 
+## Analytics
+- Google Analytics 4 under ucantrainmn@gmail.com: account "U Can Train", property/stream "ucantrain.org",
+  Measurement ID G-2HJ8C1S9JG (tag at the top of src/seo_head.html, so only the live site is tracked).
+  Enhanced measurement is on: outbound clicks to app.jackrabbitclass.com = Sign Up clicks.
+- The flyer QR code points to https://ucantrain.org/?utm_source=flyer&utm_medium=qr so flyer scans show
+  as source "flyer" in Analytics.
+
 ## Domain, DNS and search (all set up Oct 24–26, 2026)
 - Domain `ucantrain.org` registered at Namecheap. Advanced DNS records:
   - A `@` → 75.2.60.5 (Netlify)
