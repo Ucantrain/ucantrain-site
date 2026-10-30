@@ -15,12 +15,14 @@ Contact: ucantrainmn@gmail.com. Instagram: @ucantrainmn (linked in the footer an
 - Images live in `img/` (logo.png, ethan.jpg, avery.jpg). Icons at the root (favicon.ico,
   icon-192.png, icon-512.png, apple-touch-icon.png) come from `python3 src/make_icons.py`.
 - Other root files: og-image.jpg (link-preview image), robots.txt, sitemap.xml, 404.html,
-  netlify.toml (cache and security headers).
-- **Netlify free plan = 300 credits/month, 15 per deploy; at 0 the site goes offline until the cycle resets
-  (cycles start the 25th).** Batch changes into one push. Pushes that only touch CLAUDE.md, README.md, src/
-  or .gitignore are skipped by the `ignore` rule in netlify.toml and cost nothing.
-- **Deploy = push to `main`.** Netlify (project `profound-beignet-ba3575`, visitor access set to
-  Public) auto-deploys within about a minute. Commit as `U Can Train <ucantrainmn@gmail.com>`.
+  CNAME (`ucantrain.org`, tells GitHub Pages the domain; **do not delete**), .nojekyll (serve files as-is).
+  netlify.toml is left over from the old Netlify hosting and is ignored by GitHub Pages.
+- **Hosting = GitHub Pages** (switched from Netlify Oct 30, 2026): repo Settings → Pages, source
+  "Deploy from a branch", `main`, `/ (root)`, custom domain ucantrain.org, Enforce HTTPS.
+  Free, no deploy limits. Every file in the repo is publicly viewable on the site (src/, CLAUDE.md);
+  the repo is public anyway, so the never-commit-private-info rule covers this.
+- **Deploy = push to `main`.** GitHub's "pages build and deployment" action publishes within a minute or two.
+  Commit as `U Can Train <ucantrainmn@gmail.com>`.
 - After a meaningful content change, bump `<lastmod>` in sitemap.xml.
 
 ## Analytics
@@ -30,10 +32,10 @@ Contact: ucantrainmn@gmail.com. Instagram: @ucantrainmn (linked in the footer an
 - The flyer QR code points to https://ucantrain.org/?utm_source=flyer&utm_medium=qr so flyer scans show
   as source "flyer" in Analytics.
 
-## Domain, DNS and search (all set up Oct 24–26, 2026)
+## Domain, DNS and search (set up Oct 24–26, 2026; DNS moved to GitHub Pages Oct 30)
 - Domain `ucantrain.org` registered at Namecheap. Advanced DNS records:
-  - A `@` → 75.2.60.5 (Netlify)
-  - CNAME `www` → profound-beignet-ba3575.netlify.app.
+  - A `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153 (GitHub Pages)
+  - CNAME `www` → ucantrain.github.io.
   - TXT `@` → google-site-verification=WZRcFyclQpatzCENt90btsu34f_BPdwNm6WiveYmiyE
     (**do not delete**; it keeps Google Search Console verified)
 - Google Search Console: Domain property `ucantrain.org` under ucantrainmn@gmail.com. Sitemap
@@ -41,7 +43,8 @@ Contact: ucantrainmn@gmail.com. Instagram: @ucantrainmn (linked in the footer an
 - Bing Webmaster Tools: imported from Search Console; sitemap submitted, indexing requested.
 - Google Business Profile "U Can Train" (category Personal trainer, Saturday 8:00 AM–1:30 PM,
   no phone, website ucantrain.org) is created but **not public until video verification** is done.
-- Netlify HTTPS certificate is active.
+- HTTPS certificate is issued by GitHub Pages (Enforce HTTPS on). The old Netlify project
+  `profound-beignet-ba3575` is no longer used.
 
 ## Content facts the site must match
 - Sessions every Saturday from Nov 7, 2026: 8:00–9:30 am, 10:00–11:30 am, 12:00–1:30 pm.
